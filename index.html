@@ -42,27 +42,30 @@
 <body class="manrope">
   <header>
     <!-- navbar -->
-    <div class="container mx-auto w-5/6 flex justify-between items-start pt-4">
-      <!-- Navigation Links and Heading -->
-      <div class="flex items-start">
-        <button><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
-            stroke="currentColor" class="size-6 m-2 ml-1">
-            <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+    <div class="container mx-auto w-5/6 flex justify-between items-start pt-4 relative">
+      <div class="flex items-start relative">
+        <button id="menuButton" class="flex items-center focus:outline-none">
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+            stroke="currentColor" class="w-8 h-8 m-2 ml-1">
+            <path stroke-linecap="round" stroke-linejoin="round"
+              d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
           </svg>
-          <ul class="space-y-2 hidden">
-            <li><a href="">Home</a></li>
-            <li><a href="">About</a></li>
-            <li><a href="">Pages</a></li>
-            <li><a href="">Blog</a></li>
-            <li><a href="">Contact</a></li>
-          </ul>
         </button>
+  
         <h2 class="text-3xl ml-4">Hockey's</h2>
+  
+        <!-- Dropdown Menu -->
+        <ul id="dropdownMenu" class="dropdown-menu z-50 space-y-2 bg-white p-4 rounded shadow-lg absolute top-12 left-0 w-48 hidden">
+          <li><a href="#" class="block px-4 py-2 text-gray-800 hover:bg-gray-200">Home</a></li>
+          <li><a href="#" class="block px-4 py-2 text-gray-800 hover:bg-gray-200">About</a></li>
+          <li><a href="#" class="block px-4 py-2 text-gray-800 hover:bg-gray-200">Pages</a></li>
+          <li><a href="#" class="block px-4 py-2 text-gray-800 hover:bg-gray-200">Blog</a></li>
+          <li><a href="#" class="block px-4 py-2 text-gray-800 hover:bg-gray-200">Contact</a></li>
+        </ul>
       </div>
+  
       <!-- Get Ticket Button aligned to the right -->
-
       <button class="bg-[#FF4240] text-white px-4 py-2 rounded">Get Ticket</button>
-
     </div>
   </header>
 
